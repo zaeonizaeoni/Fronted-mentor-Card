@@ -1,0 +1,116 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+html{
+	box-sizing:border-box;
+}
+
+body{
+	background:#1ba1ad;
+	background-image:url("bg-pattern-top.svg");
+	background-size:700px;	
+	background-repeat:no-repeat;
+	background-position:left;
+
+}
+
+hr{
+	position: absolute;
+	top:68%;
+	width:100%;
+	border-width:thin;
+}
+
+/*
+	======= I do not how can i put two backgrounds in css and edit position of it =======
+
+.first-background{
+	background-image:url("bg-pattern-top.svg");
+	background-size:700px;	
+	background-repeat:no-repeat;
+	background-position:left;
+	height:100%;
+}*/
+
+/*.second-background{
+	background-image:url("bg-pattern-bottom.svg");
+	background-size:700px;	
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	height:900px;
+
+}*/
+
+
+.card{
+	width:350px;
+	height:380px;
+	text-align:center;
+	border-radius:10px;
+	background-color:#fff;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background-image:url("bg-pattern-card.svg");
+	background-position:top;
+	background-size:100%;
+	background-repeat:no-repeat;
+	padding:5px;
+}
+
+.card .content{
+	position:relative;
+	height:235px;
+	width:100%;
+	margin-top:140px;
+}
+
+.up-content{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.up-content p{
+	font-weight:bold;
+	display:inline-block;
+	margin-bottom:10px;
+	width:inherit;
+}
+
+.down-content{
+	display:flex;
+	justify-content:space-evenly;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	transform:translate(-50%,0);
+	width:inherit;
+}
+
+.down-content .lighter{
+	font-weight:lighter;
+	font-size:16px;
+}
+
+.down-content .bold{
+	font-weight:bolder;
+	font-size:24px;
+}
+
+.profile-picture{
+	position:absolute;
+	top:38%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:3;
+}
+
+.profile-picture img{
+	border-radius:100px;
+	border:5px solid #fff;
+}
